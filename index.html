@@ -34,6 +34,12 @@
         $(".slide h2").click(function(){
             $(".slide p").fadeToggle();
         })
+
+        $("#animate").click(function(){
+            $(".posanimbox").animate({
+                left: "250px", fontSize: "2em"
+            }, 2000);
+        })
         
     
     
@@ -65,6 +71,9 @@
         <h2>SlideUp/ SlideDown</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
     </div>
+
+    <button id="animate">Klick für Animation</button>
+    <div class="posanimbox">Box</div>
 
 </body>
 </html>

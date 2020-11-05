@@ -27,3 +27,11 @@ div p {
     line-height: 1.2;
     padding: 10px;
 }
+
+.posanimbox {
+    height: 200px;
+    background-color: red;
+    margin-top: 20px;
+    position: relative;
+    font-size: 0.25em;
+}
