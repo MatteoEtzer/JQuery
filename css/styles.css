@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 87.5%;
+    font-family: arial, helvetica, sans-serif;
+}
+
+div {
+    width: 200px;
+    min-height: 30px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid black;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+div p {
+    text-align: justify;
+    line-height: 1.2;
+    padding: 10px;
+}

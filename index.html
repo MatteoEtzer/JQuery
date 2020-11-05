@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Diverse jQuery Funktionen">
+    <meta name="author" content="Dominic Saletu">
+    <title>jQuery Tests</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        
+//       $("p").click(function(){
+//           $(this).hide();
+//       })
+        
+        
+        $(".hover").hover(function(){
+            console.log("Mouse Entered");
+         },function(){
+                console.log("Mouse Exited");
+            });
+        
+        $(".toggle").click(function(){
+            $(".toggle p").toggle();
+        })
+        
+        $(".fade").click(function(){
+            $(".fade p").fadeToggle("slow");
+        })
+        
+        $(".slide h2").click(function(){
+            $(".slide p").fadeToggle();
+        })
+        
+    
+    
+    }); // document ready
+    
+    
+    </script>
+    
+</head>
+<body>
+    
+    <p>Click me</p>
+    <p>Click me</p>
+    <p>Click me</p>
+    
+    <div class="hover">Hover me</div>
+
+    <div class="toggle">
+        <h2>Show / Hide</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    </div>
+    
+    <div class="fade">
+        <h2>FadeIn / FadeOut</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    </div>
+    
+    <div class="slide">
+        <h2>SlideUp/ SlideDown</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    </div>
+
+</body>
+</html>
