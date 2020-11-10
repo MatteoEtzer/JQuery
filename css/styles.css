@@ -28,10 +28,14 @@ div p {
     padding: 10px;
 }
 
-.posanimbox {
+.posanimbox, .posanimboxrel {
     height: 200px;
     background-color: red;
     margin-top: 20px;
     position: relative;
     font-size: 0.25em;
+}
+
+.blue {
+    background-color: blue;
 }

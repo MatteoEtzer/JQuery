@@ -40,6 +40,21 @@
                 left: "250px", fontSize: "2em"
             }, 2000);
         })
+        $("#animaterelative").click(function(){
+          $(".posanimboxrel").animate({
+              left: "+=50px",
+          })  
+        })
+        $(".callback").click(function() {
+            $(".callback p").fadeToggle(2000, function(){
+
+            })
+            alert("Animation is ready");
+        })
+        
+        $(".addClass").click(function(){
+            $(".addClass").addClass("blue");
+        })
         
     
     
@@ -74,6 +89,17 @@
 
     <button id="animate">Klick für Animation</button>
     <div class="posanimbox">Box</div>
+    <button id="animaterelative">Klick für Animation</button>
+    <div class="posanimboxrel">Box</div>
+    
+    <div class="callback">
+        <h2>Callback</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    </div>
+    <div class="addClass">
+        <h2>addClass</h2>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    </div>
 
 </body>
 </html>
